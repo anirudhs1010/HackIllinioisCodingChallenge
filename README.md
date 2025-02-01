@@ -79,4 +79,4 @@ The graph will contain cycles, so be careful not to be trapped in a loop of eter
 
 **Solution**
 
-Using a disjoint set union, we can find the sum of each connected component fast and then take the max by comparison using their parents. Used a GET request with the provided authentication and then a POST at the end.
+Using a disjoint set union, we can find the sum of each connected component fast and then take the max by comparison using their parents. Used a GET request with the provided authentication and then a POST at the end for the solution as specified.
