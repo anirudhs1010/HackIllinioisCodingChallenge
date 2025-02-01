@@ -70,9 +70,13 @@ alliances	people
 }
 
 Example
-We have two pantheons: one consisting of Zeus, Apollo, and Athena; and the other consisting of Hades, Artemis, and Hermes. The first pantheon's sum is 102, and the second pantheon's sum is 87. Therefore, the max_divine_power is 102.
+We have two pantheons: one consisting of Zeus, Apollo, and Athena; and the other consisting of Hades, Artemis, and Hermes. The first pantheon's sum is 102, and the second pantheon's sum is 87. Therefore, the max_divine_power is 102. 
 
 Constraints
 The input edges (alliances) and nodes (gods/heroes) will be valid.
 Divine power values can be positive or negative integers, as gods and heroes can be either benevolent or malevolent.
 The graph will contain cycles, so be careful not to be trapped in a loop of eternity.
+
+**Solution**
+
+Using a disjoint set union, we can find the sum of each connected component fast and then take the max by comparison using their parents. Used a GET request with the provided authentication and then a POST at the end.
