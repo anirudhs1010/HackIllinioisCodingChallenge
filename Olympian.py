@@ -1,13 +1,11 @@
 import requests
 from collections import defaultdict
-
 def main():
     # Set up headers with JWT and content-type
     headers = {
         "Authorization": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImdpdGh1YjU2NzcwOTc2IiwiZW1haWwiOm51bGwsInByb3ZpZGVyIjoiZ2l0aHViIiwicm9sZXMiOlsiVVNFUiJdLCJleHAiOjE3Mzg0NTIyNzAuNDUxLCJpYXQiOjE3MzgzNjU4NzB9.-2SnqEsRyOV8kPgES3f8lcU7aCvIUt_dg48UjhFRLyU",
         "Content-Type": "application/json"
     }
-
     # Get input data
     response = requests.get("https://adonix.hackillinois.org/registration/challenge/", headers=headers)
     data = response.json()
@@ -38,7 +36,6 @@ def main():
     # Process all alliances
     for u, v in alliances:
         union(u, v)
-
     # Calculate sums for each component
     sums = defaultdict(int)
     for name in people:
