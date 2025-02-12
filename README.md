@@ -54,7 +54,6 @@ alliances	people
 ]
 
 {
-
 "Zeus": 36,
 
 "Apollo": 32,
@@ -66,7 +65,6 @@ alliances	people
 "Hermes": 29,
 
 "Artemis": 30
-
 }
 
 Example
